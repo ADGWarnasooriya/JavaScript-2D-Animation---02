@@ -1,5 +1,6 @@
 var boy = document.getElementById("boy");
 var boyIdleImageNumber = 1;
+var boyIdleAnimationNumber = 0;
 
 function boyIdleAnimation() {
 
@@ -13,5 +14,5 @@ function boyIdleAnimation() {
 }
 
 function boyIdleAnimationStart() {
-    setInterval(boyIdleAnimation, 200);
+    boyIdleAnimationNumber = setInterval(boyIdleAnimation, 200);
 }
