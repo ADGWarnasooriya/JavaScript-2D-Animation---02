@@ -1,1 +1,1 @@
-
+var boy = document.getElementById("boy");
