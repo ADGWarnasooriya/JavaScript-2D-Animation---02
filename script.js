@@ -1,5 +1,5 @@
 var boy = document.getElementById("boy");
-var boyIdleImageNumber = 0;
+var boyIdleImageNumber = 1;
 
 function boyIdleAnimation() {
 
