@@ -32,6 +32,7 @@ function keyListner(event) {
 }
 
 boyRunImageNumber = 0;
+var boyIdleAnimationNumber = 0;
 boyRunAnimationStatus = false;
 
 function boyRunAnimation() {
@@ -47,5 +48,5 @@ function boyRunAnimation() {
 }
 
 function boyRunAnimationStart() {
-    setInterval(boyRunAnimation, 200);
+    boyIdleAnimationNumber = setInterval(boyRunAnimation, 200);
 }
