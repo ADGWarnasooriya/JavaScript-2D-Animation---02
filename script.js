@@ -33,6 +33,7 @@ function keyListner(event) {
 
     if (event.key == " ") {
         boyIdleAnimationStop();
+        boyRunAnimationStop();
         boyJumpAnimationStart();
     }
 
@@ -73,7 +74,7 @@ function boyJumpAnimation() {
         boyJumpImageNumber = 1;
     }
 
-    boy.src = "./boy/Run (" + boyJumpImageNumber + ").png";
+    boy.src = "./boy/Jump(" + boyJumpImageNumber + ").png";
 
 }
 
