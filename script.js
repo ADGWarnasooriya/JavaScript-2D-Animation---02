@@ -26,11 +26,13 @@ function keyListner(event) {
     if (event.key == "Enter") {
         boyIdleAnimationStop();
         boyRunAnimationStart();
+        boyRunAnimationStatus = true;
     }
 
 }
 
 boyRunImageNumber = 0;
+boyRunAnimationStatus = false;
 
 function boyRunAnimation() {
 
