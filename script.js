@@ -25,15 +25,13 @@ function boyIdleAnimationStop() {
 function keyListner(event) {
     if (event.key == "Enter") {
         if (boyRunAnimationStatus == false) {
-            boyIdleAnimationStop();
+
             boyRunAnimationStart();
             boyRunAnimationStatus = true;
         }
     }
 
     if (event.key == " ") {
-
-
         boyJumpAnimationStart();
     }
 
@@ -56,6 +54,7 @@ function boyRunAnimation() {
 }
 
 function boyRunAnimationStart() {
+    clearInterval(boyIdleAnimationNumber);
     boyRunAnimationNumber = setInterval(boyRunAnimation, 200);
 }
 
@@ -74,7 +73,7 @@ function boyJumpAnimation() {
         boyJumpImageNumber = 1;
     }
 
-    boy.src = "./boy/Jump(" + boyJumpImageNumber + ").png";
+    boy.src = "boy/Jump(" + boyJumpImageNumber + ").png";
 
 }
 
