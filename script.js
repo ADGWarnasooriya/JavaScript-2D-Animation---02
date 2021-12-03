@@ -58,6 +58,10 @@ function boyRunAnimationStart() {
     boyRunAnimationNumber = setInterval(boyRunAnimation, 200);
 }
 
+function boyRunAnimationStop() {
+    clearInterval(boyRunAnimationNumber);
+}
+
 var boyJumpImageNumber = 0;
 var boyJumpAnimationNumber = 0;
 
