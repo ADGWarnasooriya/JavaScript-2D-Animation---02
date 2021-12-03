@@ -58,9 +58,7 @@ function boyRunAnimationStart() {
     boyRunAnimationNumber = setInterval(boyRunAnimation, 200);
 }
 
-function boyRunAnimationStop() {
-    clearInterval(boyRunAnimationNumber);
-}
+
 
 var boyJumpImageNumber = 0;
 var boyJumpAnimationNumber = 0;
@@ -73,7 +71,7 @@ function boyJumpAnimation() {
         boyJumpImageNumber = 1;
     }
 
-    boy.src = "boy/Jump(" + boyJumpImageNumber + ").png";
+    boy.src = "./boy/Jump (" + boyJumpImageNumber + ").png";
 
 }
 
