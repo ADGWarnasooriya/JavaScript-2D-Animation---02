@@ -58,15 +58,16 @@ function boyRunAnimationStart() {
 }
 
 var boyJumpImageNumber = 0;
+var boyJumpAnimationNumber = 0;
 
 function boyJumpAnimation() {
 
-    boyJumpImageNumber = boyRunImageNumber + 1;
+    boyJumpImageNumber = boyJumpImageNumber + 1;
 
-    if (boyRunImageNumber == 9) {
-        boyRunImageNumber = 1;
+    if (boyJumpImageNumber == 13) {
+        boyJumpImageNumber = 1;
     }
 
-    boy.src = "./boy/Run (" + boyRunImageNumber + ").png";
+    boy.src = "./boy/Run (" + boyJumpImageNumber + ").png";
 
 }
