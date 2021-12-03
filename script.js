@@ -29,7 +29,7 @@ function boyRunAnimation() {
 
     boyRunImageNumber = boyRunImageNumber + 1;
 
-    if (boyRunImageNumber == 11) {
+    if (boyRunImageNumber == 9) {
         boyRunImageNumber = 1;
     }
 
