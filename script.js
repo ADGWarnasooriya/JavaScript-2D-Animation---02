@@ -29,7 +29,10 @@ function keyListner(event) {
             boyRunAnimationStart();
             boyRunAnimationStatus = true;
         }
+    }
 
+    if (event.key == " ") {
+        alert("ok")
     }
 
 }
