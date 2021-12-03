@@ -22,3 +22,17 @@ function keyListner(event) {
     if (event.key == "Enter")
         alert("Enter");
 }
+
+boyRunImageNumber = 0;
+
+function boyRunAnimation() {
+
+    boyRunImageNumber = boyRunImageNumber + 1;
+
+    if (boyRunImageNumber == 11) {
+        boyRunImageNumber = 1;
+    }
+
+    boy.src = "./boy/Run (" + boyRunImageNumber + ").png";
+
+}
