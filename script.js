@@ -37,9 +37,9 @@ function keyListner(event) {
 
 }
 
-boyRunImageNumber = 0;
+var boyRunImageNumber = 0;
 var boyIdleAnimationNumber = 0;
-boyRunAnimationStatus = false;
+var boyRunAnimationStatus = false;
 
 function boyRunAnimation() {
 
@@ -55,4 +55,18 @@ function boyRunAnimation() {
 
 function boyRunAnimationStart() {
     boyIdleAnimationNumber = setInterval(boyRunAnimation, 200);
+}
+
+var boyJumpImageNumber = 0;
+
+function boyJumpAnimation() {
+
+    boyJumpImageNumber = boyRunImageNumber + 1;
+
+    if (boyRunImageNumber == 9) {
+        boyRunImageNumber = 1;
+    }
+
+    boy.src = "./boy/Run (" + boyRunImageNumber + ").png";
+
 }
