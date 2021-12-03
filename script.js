@@ -71,3 +71,7 @@ function boyJumpAnimation() {
     boy.src = "./boy/Run (" + boyJumpImageNumber + ").png";
 
 }
+
+function boyJumpAnimationStart() {
+    boyJumpAnimationNumber = setInterval(boyJumpAnimation, 200);
+}
