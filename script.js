@@ -32,6 +32,7 @@ function keyListner(event) {
     }
 
     if (event.key == " ") {
+        boyIdleAnimationStop();
         boyJumpAnimationStart();
     }
 
