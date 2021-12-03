@@ -32,8 +32,8 @@ function keyListner(event) {
     }
 
     if (event.key == " ") {
-        boyIdleAnimationStop();
-        boyRunAnimationStop();
+
+
         boyJumpAnimationStart();
     }
 
@@ -79,5 +79,6 @@ function boyJumpAnimation() {
 }
 
 function boyJumpAnimationStart() {
+    clearInterval(boyRunAnimationNumber);
     boyJumpAnimationNumber = setInterval(boyJumpAnimation, 200);
 }
