@@ -18,6 +18,10 @@ function boyIdleAnimationStart() {
     boyIdleAnimationNumber = setInterval(boyIdleAnimation, 200);
 }
 
+function boyIdleAnimationStop() {
+    clearInterval(boyIdleAnimationNumber);
+}
+
 function keyListner(event) {
     if (event.key == "Enter") {
         boyRunAnimationStart();
