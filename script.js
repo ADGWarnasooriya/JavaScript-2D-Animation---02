@@ -19,8 +19,10 @@ function boyIdleAnimationStart() {
 }
 
 function keyListner(event) {
-    if (event.key == "Enter")
-        alert("Enter");
+    if (event.key == "Enter") {
+        boyRunAnimationStart();
+    }
+
 }
 
 boyRunImageNumber = 0;
