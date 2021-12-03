@@ -18,6 +18,6 @@ function boyIdleAnimationStart() {
     boyIdleAnimationNumber = setInterval(boyIdleAnimation, 200);
 }
 
-function keyListner() {
-
+function keyListner(event) {
+    alert(event.which);
 }
