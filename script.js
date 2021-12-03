@@ -19,5 +19,5 @@ function boyIdleAnimationStart() {
 }
 
 function keyListner(event) {
-    alert(event.which);
+    alert(event.key);
 }
