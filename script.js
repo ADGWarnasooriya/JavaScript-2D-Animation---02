@@ -32,7 +32,7 @@ function keyListner(event) {
     }
 
     if (event.key == " ") {
-        alert("ok")
+        boyJumpAnimationStart();
     }
 
 }
