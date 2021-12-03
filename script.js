@@ -19,5 +19,6 @@ function boyIdleAnimationStart() {
 }
 
 function keyListner(event) {
-    alert(event.key);
+    if (event.key == "Enter")
+        alert("Enter");
 }
