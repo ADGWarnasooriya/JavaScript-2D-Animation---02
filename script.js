@@ -17,3 +17,7 @@ function boyIdleAnimation() {
 function boyIdleAnimationStart() {
     boyIdleAnimationNumber = setInterval(boyIdleAnimation, 200);
 }
+
+function keyListner() {
+
+}
