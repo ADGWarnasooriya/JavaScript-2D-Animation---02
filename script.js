@@ -32,7 +32,11 @@ function keyListner(event) {
     }
 
     if (event.key == " ") {
-        boyJumpAnimationStart();
+        if (boyJumpAnimationStatus == false) {
+            boyJumpAnimationStart();
+            boyJumpAnimationStatus = true;
+        }
+
     }
 
 }
@@ -62,6 +66,7 @@ function boyRunAnimationStart() {
 
 var boyJumpImageNumber = 0;
 var boyJumpAnimationNumber = 0;
+var boyJumpAnimationStatus = false;
 
 function boyJumpAnimation() {
 
@@ -70,6 +75,7 @@ function boyJumpAnimation() {
     if (boyJumpImageNumber == 13) {
         boyJumpImageNumber = 1;
         clearInterval(boyJumpAnimationNumber);
+        boyJumpAnimationStatus = false;
         boyRunAnimationStart();
         var boyRunAnimationStatus = true;
     }
