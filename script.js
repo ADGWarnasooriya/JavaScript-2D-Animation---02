@@ -77,5 +77,6 @@ function boyJumpAnimation() {
 
 function boyJumpAnimationStart() {
     clearInterval(boyRunAnimationNumber);
+    clearInterval(boyIdleAnimationNumber);
     boyJumpAnimationNumber = setInterval(boyJumpAnimation, 200);
 }
