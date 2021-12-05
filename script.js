@@ -80,6 +80,7 @@ function boyJumpAnimation() {
 
 function boyJumpAnimationStart() {
     clearInterval(boyRunAnimationNumber);
+    var boyRunAnimationStatus = false;
     clearInterval(boyIdleAnimationNumber);
     boyJumpAnimationNumber = setInterval(boyJumpAnimation, 200);
 }
