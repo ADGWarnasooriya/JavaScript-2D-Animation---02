@@ -69,6 +69,7 @@ function boyJumpAnimation() {
 
     if (boyJumpImageNumber == 13) {
         boyJumpImageNumber = 1;
+        clearInterval(boyJumpAnimationNumber);
     }
 
     boy.src = "./boy/Jump (" + boyJumpImageNumber + ").png";
