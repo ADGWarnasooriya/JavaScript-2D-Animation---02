@@ -35,7 +35,7 @@ function keyListner(event) {
         if (boyJumpAnimationStatus == false) {
             boyJumpAnimationStart();
             boyJumpAnimationStatus = true;
-
+            boyRunAnimationStatus = true;
         }
 
     }
@@ -79,8 +79,6 @@ function boyJumpAnimation() {
         boyJumpAnimationStatus = false;
         boyRunAnimationStart();
         var boyRunAnimationStatus = true;
-    } else {
-        boyRunAnimationStatus = true;
     }
 
     boy.src = "./boy/Jump (" + boyJumpImageNumber + ").png";
