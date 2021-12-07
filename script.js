@@ -98,7 +98,7 @@ var boxMarginLeft = 400;
 function boxAnimation() {
     boxMarginLeft = boxMargiLneft - 10;
     var box = document.getElementById("box");
-    box.style.marginLeft = boxmarginLeft + "px";
+    box.style.marginLeft = boxMarginLeft + "px";
 }
 
 function boxAnimationStart() {
