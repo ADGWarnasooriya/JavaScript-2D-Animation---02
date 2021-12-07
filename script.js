@@ -91,3 +91,11 @@ function boyJumpAnimationStart() {
     clearInterval(boyIdleAnimationNumber);
     boyJumpAnimationNumber = setInterval(boyJumpAnimation, 200);
 }
+
+var boxMargineft = 400 px;
+
+function boxAnimation() {
+    boxMargineft = boxMargineft - 10;
+    var box = document.getElementById("box");
+    box.style.marginLeft = boxmarginLeft + "px";
+}
