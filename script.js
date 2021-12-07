@@ -93,10 +93,10 @@ function boyJumpAnimationStart() {
     boyJumpAnimationNumber = setInterval(boyJumpAnimation, 200);
 }
 
-var boxMargineft = 400;
+var boxMarginLeft = 400;
 
 function boxAnimation() {
-    boxMargineft = boxMargineft - 10;
+    boxMarginLeft = boxMargiLneft - 10;
     var box = document.getElementById("box");
     box.style.marginLeft = boxmarginLeft + "px";
 }
