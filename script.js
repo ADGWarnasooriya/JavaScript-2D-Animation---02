@@ -99,3 +99,7 @@ function boxAnimation() {
     var box = document.getElementById("box");
     box.style.marginLeft = boxmarginLeft + "px";
 }
+
+function boxAnimationStart() {
+    setInterval(boxAnimation, 300);
+}
