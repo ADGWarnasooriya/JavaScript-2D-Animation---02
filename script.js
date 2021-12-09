@@ -94,6 +94,7 @@ function boyJumpAnimationStart() {
 }
 
 var boxMarginLeft = 400;
+var boxAnimationId = 0;
 
 function boxAnimation() {
     boxMarginLeft = boxMarginLeft - 10;
