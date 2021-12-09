@@ -94,7 +94,7 @@ function boyJumpAnimationStart() {
 }
 
 var boxMarginLeft = 400;
-var boxAnimationId = 0;
+var boxAnimationNumber = 0;
 
 function boxAnimation() {
     boxMarginLeft = boxMarginLeft - 10;
@@ -104,7 +104,7 @@ function boxAnimation() {
     box.style.marginLeft = boxMarginLeft + "px";
 
     if (boxMarginLeft == 180) {
-        clearInterval(boxAnimationId);
+        clearInterval(boxAnimationNumber);
     }
 }
 
