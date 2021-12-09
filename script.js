@@ -104,7 +104,7 @@ function boxAnimation() {
     box.style.marginLeft = boxMarginLeft + "px";
 
     if (boxMarginLeft == 180) {
-        alert("Hit");
+        clearInterval(boxAnimationId);
     }
 }
 
