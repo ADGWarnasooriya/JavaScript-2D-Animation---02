@@ -110,5 +110,5 @@ function boxAnimation() {
 }
 
 function boxAnimationStart() {
-    boxAnimationId = setInterval(boxAnimation, 300);
+    boxAnimationNumber = setInterval(boxAnimation, 300);
 }
