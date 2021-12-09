@@ -112,3 +112,13 @@ function boxAnimation() {
 function boxAnimationStart() {
     boxAnimationNumber = setInterval(boxAnimation, 300);
 }
+
+function boyDeadAnimation() {
+
+    boyDeadImageNumber = boyDeadImageNumber + 1;
+
+
+
+    boy.src = "./boy/Dead (" + boyDeadImageNumber + ").png";
+
+}
