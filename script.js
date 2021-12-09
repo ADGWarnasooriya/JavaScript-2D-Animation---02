@@ -124,7 +124,7 @@ function boyDeadAnimation() {
     boy.src = "./boy/Dead (" + boyDeadImageNumber + ").png";
 
     if (boyDeadImageNumber == 10) {
-
+        clearInterval(boyDeadAnimationNumber);
     }
 
 }
