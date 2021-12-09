@@ -106,6 +106,7 @@ function boxAnimation() {
     if (boxMarginLeft == 180) {
         clearInterval(boxAnimationNumber);
         clearInterval(boyRunAnimationNumber);
+        boyDeadAnimation();
     }
 }
 
@@ -121,4 +122,8 @@ function boyDeadAnimation() {
 
     boy.src = "./boy/Dead (" + boyDeadImageNumber + ").png";
 
+}
+
+function boyDeadAnimationStart() {
+    setInterval(boyDeadAnimation, 300);
 }
