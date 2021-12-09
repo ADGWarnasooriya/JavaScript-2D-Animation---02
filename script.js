@@ -130,5 +130,5 @@ function boyDeadAnimation() {
 }
 
 function boyDeadAnimationStart() {
-    setInterval(boyDeadAnimation, 300);
+    boyDeadAnimationNumber = setInterval(boyDeadAnimation, 300);
 }
