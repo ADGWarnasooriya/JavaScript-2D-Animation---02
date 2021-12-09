@@ -115,14 +115,17 @@ function boxAnimationStart() {
 }
 
 var boyDeadImageNumber = 0;
+var boyDeadAnimationNumber = 0;
 
 function boyDeadAnimation() {
 
     boyDeadImageNumber = boyDeadImageNumber + 1;
 
-
-
     boy.src = "./boy/Dead (" + boyDeadImageNumber + ").png";
+
+    if (boyDeadImageNumber == 10) {
+
+    }
 
 }
 
