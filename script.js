@@ -105,6 +105,7 @@ function boxAnimation() {
 
     if (boxMarginLeft == 180) {
         clearInterval(boxAnimationNumber);
+        clearInterval(boyRunAnimationNumber);
     }
 }
 
