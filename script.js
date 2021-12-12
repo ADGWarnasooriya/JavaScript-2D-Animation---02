@@ -25,9 +25,11 @@ function boyIdleAnimationStop() {
 function keyListner(event) {
     if (event.key == "Enter") {
         if (boyRunAnimationStatus == false) {
+            if (boyDeadAnimationStatus == false) {
+                boyRunAnimationStart();
+                boyRunAnimationStatus = true;
+            }
 
-            boyRunAnimationStart();
-            boyRunAnimationStatus = true;
         }
     }
 
