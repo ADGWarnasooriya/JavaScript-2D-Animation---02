@@ -35,9 +35,12 @@ function keyListner(event) {
 
     if (event.key == " ") {
         if (boyJumpAnimationStatus == false) {
-            boyJumpAnimationStart();
-            boyJumpAnimationStatus = true;
-            boyRunAnimationStatus = true;
+            if (boyDeadAnimationStatus == false) {
+                boyJumpAnimationStart();
+                boyJumpAnimationStatus = true;
+                boyRunAnimationStatus = true;
+            }
+
         }
 
     }
