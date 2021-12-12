@@ -116,6 +116,7 @@ function boxAnimationStart() {
 
 var boyDeadImageNumber = 0;
 var boyDeadAnimationNumber = 0;
+var boyDeadAnimationStatus = false;
 
 function boyDeadAnimation() {
 
