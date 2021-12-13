@@ -64,9 +64,12 @@ function boyRunAnimation() {
 }
 
 function boyRunAnimationStart() {
-    boxAnimationStart();
+
     clearInterval(boyIdleAnimationNumber);
     boyRunAnimationNumber = setInterval(boyRunAnimation, 200);
+    if (boxAnimationStatus == false) {
+        boxAnimationStart();
+    }
 }
 
 
