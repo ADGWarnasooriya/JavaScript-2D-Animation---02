@@ -119,6 +119,7 @@ function boxAnimation() {
 
 function boxAnimationStart() {
     boxAnimationNumber = setInterval(boxAnimation, 300);
+    boxAnimationStatus = false;
 }
 
 var boyDeadImageNumber = 0;
@@ -139,4 +140,5 @@ function boyDeadAnimation() {
 
 function boyDeadAnimationStart() {
     boyDeadAnimationNumber = setInterval(boyDeadAnimation, 300);
+
 }
