@@ -100,6 +100,7 @@ function boyJumpAnimationStart() {
 
 var boxMarginLeft = 400;
 var boxAnimationNumber = 0;
+var boxAnimationStatus = false;
 
 function boxAnimation() {
     boxMarginLeft = boxMarginLeft - 10;
